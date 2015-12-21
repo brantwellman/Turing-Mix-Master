@@ -34,9 +34,23 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rspec-rails'
+  # Use Capy for feature testing
+  gem 'capybara'
+  # Call 'save_and_open_page' for feature test debugging
+  gem 'launchy'
+  # Test validations
+  gem 'shoulda-matchers'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
 end
+
+# Debugging in production
+gem 'rails_12factor', group: :production
+
+
+# heroku url
+# https://cryptic-ravine-2254.herokuapp.com/
