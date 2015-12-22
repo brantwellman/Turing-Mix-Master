@@ -40,6 +40,10 @@ group :development, :test do
   gem 'launchy'
   # Test validations
   gem 'shoulda-matchers'
+  # Factories
+  gem "factory_girl_rails"
+  # DB Cleaner
+  gem "database_cleaner"
 end
 
 group :development do
