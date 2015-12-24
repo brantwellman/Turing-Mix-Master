@@ -11,7 +11,7 @@ RSpec.feature "user edits an existing playlist" do
     uncheck("song-#{first.id}")
     check("song-#{new_song.id}")
     click_on "Update Playlist"
-save_and_open_page
+
     expect(page).to have_content playlist.name
     expect(page).to_not have_content first.title
     expect(page).to have_content new_song.title
